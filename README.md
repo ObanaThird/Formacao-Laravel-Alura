@@ -1,61 +1,127 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Controle de Séries
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
-## About Laravel
+Sistema web para gerenciamento de séries de TV, permitindo que o usuário organize e acompanhe o progresso dos episódios assistidos.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Este projeto foi desenvolvido com o framework PHP **Laravel**, com base nos cursos da **Formação Laravel da Alura**.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📖 Índice
 
-## Learning Laravel
+*   [✨ Funcionalidades](#-funcionalidades)
+*   [🛠️ Tecnologias Utilizadas](#-tecnologias-utilizadas)
+*   [🚀 Começando](#-começando)
+    *   [Pré-requisitos](#pré-requisitos)
+    *   [Instalação](#instalação)
+*   [🧪 Rodando os Testes](#-rodando-os-testes)
+*   [🤝 Contribuindo](#-contribuindo)
+*   [📝 Licença](#-licença)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## ✨ Funcionalidades
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+*   **Autenticação de Usuários:** Sistema completo de login e registro.
+*   **Gerenciamento de Séries (CRUD):**
+    *   Adicionar novas séries à sua lista.
+    *   Visualizar todas as séries cadastradas.
+    *   Editar informações de uma série.
+    *   Remover séries da lista.
+*   **Controle de Temporadas e Episódios:**
+    *   Adicionar temporadas e o número de episódios correspondente para cada série.
+    *   Marcar episódios individualmente como assistidos.
+    *   Visualizar o progresso de episódios assistidos por temporada.
+*   **Interface Intuitiva:** Design simples e funcional para uma fácil navegação.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🛠️ Tecnologias Utilizadas
 
-### Premium Partners
+O projeto foi construído utilizando as seguintes tecnologias:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+-   **[Laravel](https://laravel.com/)**: Framework PHP para o desenvolvimento da aplicação.
+-   **[PHP](https://www.php.net/)**: Linguagem de programação principal.
+-   **[SQLite](https://www.sqlite.org/index.html)**: Banco de dados relacional embarcado.
+-   **[Blade](https://laravel.com/docs/blade)**: Template engine do Laravel.
+-   **[Bootstrap](https://getbootstrap.com/)**: Framework CSS para estilização da interface.
+-   **[Composer](https://getcomposer.org/)**: Gerenciador de dependências para o PHP.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🚀 Começando
 
-## Code of Conduct
+Siga estas instruções para obter uma cópia do projeto em funcionamento na sua máquina local para desenvolvimento e testes.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Pré-requisitos
 
-## Security Vulnerabilities
+Antes de começar, você precisará ter as seguintes ferramentas instaladas em seu ambiente:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+-   [PHP](https://www.php.net/downloads.php) (versão ^8.2 ou superior)
+-   [Composer](https://getcomposer.org/download/)
+-   A extensão PHP para SQLite (`php-sqlite3`)
 
-## License
+### Instalação
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1.  Clone o repositório para sua máquina local:
+    ```bash
+    git clone https://github.com/seu-usuario/controle-series.git
+    cd controle-series
+    ```
+
+2.  Instale as dependências do PHP com o Composer:
+    ```bash
+    composer install
+    ```
+
+3.  Crie uma cópia do arquivo de ambiente e configure suas variáveis:
+    ```bash
+    cp .env.example .env
+    ```
+
+4.  Gere a chave de encriptação da aplicação:
+    ```bash
+    php artisan key:generate
+    ```
+
+5.  Crie o arquivo para o banco de dados SQLite:
+    ```bash
+    touch database/database.sqlite
+    ```
+
+6.  Execute as migrações para criar as tabelas do banco de dados:
+    ```bash
+    php artisan migrate
+    ```
+
+7.  Inicie o servidor de desenvolvimento local:
+    ```bash
+    php artisan serve
+    ```
+
+8.  Abra seu navegador e acesse `http://127.0.0.1:8000`.
+
+---
+
+## 🧪 Rodando os Testes
+
+O Laravel fornece uma suíte de testes robusta. Para executar os testes automatizados deste projeto, utilize o seguinte comando:
+
+```bash
+php artisan test
+```
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
+
+1.  Faça um *Fork* do projeto.
+2.  Crie uma *Branch* para sua modificação (`git checkout -b feature/FuncionalidadeIncrivel`).
+3.  Faça o *Commit* de suas mudanças (`git commit -m 'Adiciona FuncionalidadeIncrivel'`).
+4.  Faça o *Push* da *Branch* (`git push origin feature/FuncionalidadeIncrivel`).
+5.  Abra um *Pull Request*.
